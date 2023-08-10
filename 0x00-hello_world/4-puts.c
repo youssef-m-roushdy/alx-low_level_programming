@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main ia a entry point
+ * main - Entry point
  *
- * return where the proram end
+ * Return: Always 0 (success
  */
 int main(void)
 {
