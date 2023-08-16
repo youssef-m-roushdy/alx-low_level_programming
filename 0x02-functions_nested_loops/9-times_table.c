@@ -10,7 +10,7 @@ while (counter1 <= 9)
 while (counter2 <= 9)
 {
 num = counter1 * counter2;
-if (num == 0)
+if (num == 0 && (counter1 == 0 || counter1 != 0) && counter2 == 0)
 {
 _putchar(num + '0');
 counter2++;
