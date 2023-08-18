@@ -5,11 +5,11 @@
 void more_numbers(void)
 {
 int round, num;
-round = 1;
-while (round <= 10)
+
+for (round = 0; round <= 10; round++)
 {
 num = 0;
-while (num >= 0 && num <= 14)
+for (num = 0; num <= 14; num++)
 {
 if (num > 9)
 {
@@ -20,9 +20,7 @@ else
 {
 _putchar(num + '0');
 }
-num++;
 }
 _putchar('\n');
-round++;
 }
 }
