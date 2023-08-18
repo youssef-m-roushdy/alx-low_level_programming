@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
  * main - Prints numbers from 1 to 100.
  *
@@ -8,21 +8,32 @@
  */
 int main(void)
 {
+char a, b;
 int i;
 for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0)
 {
-printf("Fizz");
+write(1, "Fizz", 4);
 }
 else if (i % 5 == 0)
+write(1, "Buzz", 4);
+else
 {
-printf("Buzz");
+if (i <= 9)
+{
+a = i + '0';
+write(1, &a, 1);
 }
 else
 {
-printf("%d", i);
+a = (i / 10) + '0';
+b = (i % 10) + '0';
+write(1, &a, 1);
+write(1, &b, 1);
 }
-printf(" ");
 }
+write(1, " ", 1);
+}
+return (0);
 }
