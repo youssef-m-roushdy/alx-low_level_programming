@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * _strncpy - Copies at most 'n' bytes of one string to another.
  * @dest: The destination string.
@@ -8,8 +9,11 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+
 int i;
-for (i = 0; i < n; i++)
+if(n < len)
+len = n;
+for (i = 0; i < len; i++)
 {
 dest[i] = src[i];
 }
