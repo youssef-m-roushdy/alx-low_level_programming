@@ -12,5 +12,5 @@ int i;
 i = 0;
 while (s[i] != c)
 i++;
-return (s + i);
+return (&s[i]);
 }
