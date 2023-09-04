@@ -15,7 +15,7 @@ int len = strlen(str);
 int i = 0;
 if (str == NULL)
 return (NULL);
-a = malloc(len * sizeof(char));
+a = malloc((len + 1) * sizeof(char));
 if (a == NULL)
 return (NULL);
 while (i < len)
