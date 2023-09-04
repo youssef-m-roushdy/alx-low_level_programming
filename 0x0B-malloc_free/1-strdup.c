@@ -11,18 +11,18 @@
 char *_strdup(char *str)
 {
 char *a;
-int len = strlen(str);
-int i = 0;
+int len, i = 0;
 if (str == NULL)
 return (NULL);
-a = malloc((len + 1) * sizeof(char));
+len = strlen(str) + 1;
+a = malloc(len * sizeof(char));
 if (a == NULL)
 return (NULL);
-while (i < len)
+while (str[i])
 {
 a[i] = str[i];
 i++;
-}
+{
 a[i] = '\0';
 return (a);
 }
