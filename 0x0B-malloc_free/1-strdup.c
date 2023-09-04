@@ -23,5 +23,6 @@ while (i < len)
 a[i] = str[i];
 i++;
 }
+a[i] = '\0';
 return (a);
 }
