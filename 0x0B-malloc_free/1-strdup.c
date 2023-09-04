@@ -14,7 +14,7 @@ char *a;
 unsigned int len = strlen(str);
 unsigned int i = 0;
 a = malloc(len * sizeof(char));
-if (str == NULL)
+if (str == NULL || a == NULL)
 return (NULL);
 while (i < len)
 {
