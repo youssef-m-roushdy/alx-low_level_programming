@@ -18,9 +18,9 @@ if (s2 == NULL)
 s2 = "";
 i = 0;
 j = 0;
-if (s1 != "\0")
+if (s1 != NULL)
 i = strlen(s1);
-if (s2 != "\0")
+if (s2 != NULL)
 j = strlen(s2);
 str = malloc((i + j + 1) * sizeof(char));
 if (str == NULL)
