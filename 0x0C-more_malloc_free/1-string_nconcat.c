@@ -1,5 +1,4 @@
 #include <stdlib.h>
-Copy code
 /**
  * string_nconcat - Concatenates the first n characters of two
  * strings into a new string.
