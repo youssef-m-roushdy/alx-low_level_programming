@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - Concatenates the first n characters of two
  * strings into a new string.
@@ -14,22 +15,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int i, j, lenc;
 char *nconc;
-lenc = n * 2;
+lenc = n + strlen(s1);
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-nconc = malloc(lenc *sizeof(char));
+nconc = malloc((lenc + 1) * sizeof(char));
 if (nconc == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < n; i++)
-{
-if (s1[i] == '\0')
-break;
+for (i = 0; s[i] != '\0'; i++)
 nconc[i] = s1[i];
-}
 for (j = 0; j < n; j++)
 nconc[j + i] = s2[j];
 nconc[j + i] = '\0';
