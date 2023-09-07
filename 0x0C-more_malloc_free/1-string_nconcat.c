@@ -20,7 +20,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-nconc = malloc((lenc + 1) * sizeof(char));
+nconc = malloc(lenc *sizeof(char));
 if (nconc == NULL)
 {
 return (NULL);
