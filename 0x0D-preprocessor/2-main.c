@@ -1,9 +1,12 @@
 #include <stdio.h>
+/**
+ * main - prints the name of the file
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	/* Print the name of the source file using __FILE__ macro */
 	printf("%s\n", __FILE__);
-	/* Return 0 to indicate successful execution */
 	return (0);
 }
