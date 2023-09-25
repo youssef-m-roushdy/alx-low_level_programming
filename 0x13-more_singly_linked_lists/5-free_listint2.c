@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * free_listint - Free memory allocated for a linked list of integers.
- * @head: A pointer to the head of the linked list.
+ * free_listint2 - Free memory allocated for a linked list of integers.
+ * @head: A pointer to a pointer to the head of the linked list.
  */
 void free_listint2(listint_t **head)
 {
