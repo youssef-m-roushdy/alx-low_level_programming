@@ -8,10 +8,10 @@ int pop_listint(listint_t **head)
 	int d;
 	listint_t *pop = (*head)->next;
 
-	if (*head == NULL)
+	if (!*head || !head)
 		return (0);
 	d = (*head)->n;
-	*head = NULL;
+	free(*head);
 	*head = pop;
 	return (d);
 }
