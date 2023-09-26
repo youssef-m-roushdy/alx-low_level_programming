@@ -24,6 +24,12 @@ if (!new || !head)
 return (NULL);
 new->n = n;
 new->next = NULL;
+if (idx == 0)
+{
+new->next = *head;
+*head = new;
+return (new);
+}
 while (temp && i < idx)
 {
 temp = temp->next;
