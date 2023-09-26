@@ -35,7 +35,7 @@ while (temp && i < idx)
 temp = temp->next;
 i++;
 }
-if (temp && i == idx - 1)
+if (i == idx - 1)
 {
 new->next = temp->next;
 temp->next = new;
