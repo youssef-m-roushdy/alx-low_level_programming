@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * clear_bit - Clear a specific bit in an unsigned long integer.
  * @n: A pointer to the unsigned long integer.
