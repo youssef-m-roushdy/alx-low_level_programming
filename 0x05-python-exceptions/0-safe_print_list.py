@@ -1,3 +1,4 @@
+
 def safe_print_list(my_list=[], x=0):
     try:
         if x > len(my_list):
@@ -6,5 +7,6 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end="")
         print("")
         return x
-    except ValueError:
-        print("")
+    except IndexError:
+        print("Index out of range")
+        return 0
