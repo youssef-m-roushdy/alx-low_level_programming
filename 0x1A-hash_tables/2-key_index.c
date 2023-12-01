@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+#include <stdio.h>
 /**
  * key_index - Computes the index for a given key based
  * on a specified size.
@@ -10,5 +11,9 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
+	if(!key)
+	{
+		return (NULL);
+	}
 	return (*key % size);
 }
