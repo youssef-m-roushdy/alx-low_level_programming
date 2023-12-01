@@ -5,7 +5,6 @@
  * @ht: The hash table to which the element will be added.
  * @key: The key for the new element.
  * @value: The value associated with the key.
- *
  * Return: 1 on success, 0 on failure.
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -32,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = ht->array[idx];
 	while (node != NULL)
 	{
-		if(strcmp(node->key, key))
+		if (strcmp(node->key, key))
 		{
 			free(node->value);
 			node->value = strdup(value);
@@ -47,6 +46,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->value = strdup(value);
 	node->next = ht->array[idx];
 	ht->array[idx] = node;
-
 	return (1);
 }
