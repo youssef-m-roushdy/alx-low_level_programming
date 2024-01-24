@@ -1,6 +1,9 @@
-# Makefile for 'school' executable
+# Makefile for building the 'school' executable
 
-all: 
-    gcc main.c school.c -o school
+all: school
+
+school: main.c
+    gcc -o school main.c
+
 clean:
-    rm -rf *.o
+    rm -f school
