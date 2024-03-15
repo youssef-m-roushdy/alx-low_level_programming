@@ -21,6 +21,5 @@ int linear_search(int *array, size_t size, int value)
 		if (array[i] == value)
 			return (i);
 	}
-	printf("Found 999 at index: -1");
 	return (-1);
 }
